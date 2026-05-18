@@ -1,4 +1,4 @@
-﻿const API_URL = "http://localhost:3000";
+﻿const API_URL = "https://my-json-server.typicode.com/fabiorodrigues12223/projeto-semin-rio";
 
 const DIAS_SEMANA = [
   "Domingo",
