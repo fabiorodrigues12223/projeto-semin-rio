@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <title>Cronograma de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="site-header">
+    <p class="header-eyebrow">Planejamento inteligente</p>
+    <h1><span class="text-gradient">Cronograma</span> de Estudos</h1>
+  </header>
+
+  <main>
+    <p class="intro-card" id="intro-cronograma">
+      Monte seu plano semanal: escolha o que estudar, em qual dia e por quantos minutos.
+    </p>
+
+    <div class="cronograma-toolbar">
+      <button type="button" id="btn-editar-cronograma" class="btn btn-primary">Editar cronograma</button>
+      <button type="button" id="btn-gerar-sugestao" class="btn btn-secondary">Gerar sugestão</button>
+    </div>
+
+    <div class="cronograma-toolbar cronograma-toolbar-edicao" id="toolbar-edicao" hidden>
+      <button type="button" id="btn-salvar-cronograma" class="btn btn-primary">Salvar alterações</button>
+      <button type="button" id="btn-cancelar-edicao" class="btn btn-secondary">Cancelar</button>
+    </div>
+    <p id="erro-cronograma" class="erro" hidden></p>
+    <p id="sucesso-cronograma" class="sucesso" hidden></p>
+    <div id="cronograma"></div>
+  </main>
+
+  <nav class="nav-inferior">
+    <div class="nav-inferior-inner">
+      <a href="index.html" data-pagina="disciplinas">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Disciplinas
+      </a>
+      <a href="nova-tarefa.html" data-pagina="tarefas">
+        <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Tarefas
+      </a>
+      <a href="cronograma.html" data-pagina="cronograma" class="ativo">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Cronograma
+      </a>
+    </div>
+  </nav>
+
+  <script src="app.js" charset="UTF-8"></script>
+  <script>initCronograma();</script>
+</body>
+</html>
