@@ -1,4 +1,4 @@
-﻿const API_URL = "https://my-json-server.typicode.com/fabiorodrigues12223/projeto-semin-rio";
+﻿const API_URL = "https://api-cronograma.vercel.app/";
 
 const DIAS_SEMANA = [
   "Domingo",
